@@ -47,7 +47,7 @@ $('#loadNextGame').click(function(){
 
 //=====================================Timer==========================================
 const defaultGameDuration = 61000
-const gameDuration = 60
+let gameDuration = 60
 
 let wait = new Promise((resolve, reject) => setTimeout(resolve, defaultGameDuration))
 let showTimer = new Promise((resolve, reject) =>{
