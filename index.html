@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel='stylesheet' href="/css/MemoryMatch.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src ='js/constants.js' type='text/javascript' defer></script>
+    <script src ='js/MemoryMatch.js' type='text/javascript' defer></script>
+    <script src ='js/utility.js' type='text/javascript' defer></script>
+    <title>Memory Test!!!</title>
+</head>
+<body>
+    <div style='display:flex; flex-direction:column;align-items: center;'>
+        <h1 style="margin-bottom: 65px;">Test your brain speed!!!</h1>
+        
+        <label for="matchDiv"><b>Game Rules</b></label>
+        <div id='matchDiv' style="margin-bottom: 25px;"> 
+            <ul>
+                <li>Choose the animals in ascending order</li>
+                <li>You will get 1 minute of time </li>
+                <li> Chase your top score!!!</li>
+            </ul> 
+        </div>
+
+        <button style="width: 500px;" class='button btn-lg btn-primary' data-toggle='modal' data-target='#nameModal'>Ready for Challenge</button>
+    </div>
+
+    <!-- Name Modal -->
+    <div class='modal fade' id='nameModal' role='dialog' data-backdrop="static" data-keyboard='false'>
+        <div class='modal-dialog' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title'>Please enter your name</h5>
+                </div>
+                <div class='modal-body'>
+                    <form>
+                        <div class="form-group">
+                            <input type='text' id='UserName' class="form-control" aria-required="true" placeholder="Enter Name Here!!!" autofocus />
+                            <span class='error'>Please fill your name!!</label>
+                        </div>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <button class="btn btn-secondary" id='ProfileSubmit'>Proceed</button>
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- play zone starts here -->
+
+
+
+</body>
+</html>
